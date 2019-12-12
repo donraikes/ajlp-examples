@@ -7,11 +7,18 @@
 /*
  * Your dashboard ViewModel code goes here
  */
-define(['accUtils'],
- function(accUtils) {
+define(['accUtils',
+	'knockout',
+	'ojs/ojknockout',
+	'ojs/ojformlayout',
+	 'ojs/ojlabel',
+	 	'ojs/ojradioset'
+],
+ function(accUtils,ko) {
 
     function DashboardViewModel() {
       var self = this;
+	  this.RBValue = ko.observable("red");
       // Below are a set of the ViewModel methods invoked by the oj-module component.
       // Please reference the oj-module jsDoc for additional information.
 

@@ -5,6 +5,16 @@
 <div class="oj-hybrid-padding">
   <h1>Dashboard Content Area</h1>
   <div>
-      To change the content of this section, you will make edits to the dashboard.html file located in the /js/views folder.
+      <oj-form-layout id="loginForm" max-columns="1" direction="column" label-edge="top">
+  <oj-label id="radioset-label">Select your favorite Color</oj-label>
+  <oj-radioset id="radioset-demo" value="{{RBValue}}" labelled-by="radioset-label">
+    <oj-option value="blue">Blue</oj-option>
+	<oj-option value="purple">Purple</oj-option>
+	<oj-option value="red">Red</oj-option>
+	<oj-option value="orange">Orange</oj-option>
+    <oj-option value="yellow">Yellow</oj-option>
+	<oj-option value="green">Green</oj-option>
+   </oj-radioset>
+      </oj-form-layout>
   </div>
 </div>
